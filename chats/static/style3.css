@@ -1,0 +1,128 @@
+/* .navbar {
+    
+    padding-left: 44rem;
+   height: 73px;
+}
+
+.navbar-custom .navbar-brand {
+    color: white;
+} */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+   
+    *{
+        margin: 0%;
+        padding: 0%;
+        color: white;
+    }
+    body{
+        background-image: linear-gradient(to right, #1D2B64, #F8CDDA);
+    }
+    .outerbox{
+        
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        background-color: #1D2B64;
+        padding: 15px;
+        height: 88vh;
+        border-radius: 25px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    
+  
+    .navbar {
+  overflow: hidden;
+  text-transform: uppercase;
+  background-color: #1D2B64;
+    color: white;
+    padding-right: 37rem;
+   
+  top: 0;
+  width: 100%; 
+  z-index: 1;
+}
+ 
+ 
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.container {
+                float:left; 
+                background:#1D2B64;
+                width:20%;
+                height:75vh;
+                padding-top: 30px;
+                align-items: center;
+               
+
+                
+             }
+.heading1{
+    padding-left: 150px;
+    padding-bottom: 20px;
+}
+
+
+ .vl {
+      border-left: 4.5px solid #85ff00;
+    height: 90%;
+    position: fixed;
+    left: 25%;
+    margin-left: -3px;
+    top: 0;
+}
+
+
+.heading2{
+    margin-left: 260px;
+}
+
+.heading{
+ 
+    padding-left: 120px;
+   
+}
+
+  
+ .v2 {
+      border-left: 4.5px solid #85ff00;
+    height: 100%;
+    position: fixed;
+    left: 75%;
+    margin-left: -3px;
+    top: 0;
+} 
+.input{
+    width: 50%;
+    margin-top: 230px;
+    display: flex;
+    justify-content: center;    
+    margin-left: 30px;
+    margin-left: 23%;
+    
+}
+
+.input2{
+    width: 200%;
+    background-color:transparent;
+    border:0.5px solid;
+    border-color:#F8CDDA; 
+    border-radius: 9px;
+    padding-left: 5px;
+}
+
+.send{
+    margin-left: 13px;
+    margin-top: 2px;
+    background-color: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
