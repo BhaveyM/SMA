@@ -1,5 +1,5 @@
 
-#SMA
+# SMA
 
 steganography-messaging app
 
@@ -55,4 +55,17 @@ Bhavey Mittal
 Samarth Bharadwaj
 
 Tushar Pasricha
+
+## Authors
+
+- [@tusharpasricha](https://github.com/tusharpasricha)
+- [@bhaveymittal](https://github.com/BhaveyM)
+- [@samarth](https://github.com/samarth2002)
+
+## Feedback
+
+If you have any feedback, please reach out to us at tusharpasricha21@gmail.com
+
+
+
 
