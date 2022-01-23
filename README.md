@@ -17,7 +17,7 @@ cryptography.
 
 - Fork the Github repository
 
-Clone using command
+- Clone using command
 ```bash
  git clone https://github.com/BhaveyM/SMA.git
 ```
@@ -34,7 +34,7 @@ Clone using command
 
 - Pin the Extension.
 
-- Alright you are all set
+Alright you are all set
 
 
 ## How to use
