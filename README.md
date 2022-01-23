@@ -1,11 +1,17 @@
-# SMA
+
+#SMA
+
 steganography-messaging app
-Set up
+
+## Set Up
+
+
 Fork the Github repository
 
 Clone using command
-
-git clone https://github.com/BhaveyM/SMA.git
+```bash
+ git clone https://github.com/BhaveyM/SMA.git
+```
 
 Open chrome or any other preferred browser
 
@@ -21,7 +27,9 @@ Pin the Extension.
 
 Alright you are all set
 
-How to use
+
+## How to use
+
 Open any webpage on any preferred browser
 
 Click on extension from pinned extensions
@@ -37,9 +45,14 @@ ask him/her to choose the same hidden image in the unhide tab and click "unhide"
 Wait for a few seconds for the hidden file to be decoded and let it download
 
 
-Contributors
+
+
+
+## Contributers
+
 Bhavey Mittal
 
 Samarth Bharadwaj
 
 Tushar Pasricha
+
