@@ -1,20 +1,62 @@
-let lists = document.querySelector("#list");
-function display() {
-	lists.innerHTML = "";
-	chrome.storage.local.get(['tiktokData'], (result)=> {
-		//console.log(result)
-		result.tiktokData.forEach((z, i)=> {
-			let tempEle = document.createElement("span");
-			tempEle.innerHTML = `<img src="${z.i}" /><div class="navs"><a class="items" href="${z.l}" target="_blank">${z.l.slice(z.l.indexOf("@")+1, z.l.indexOf("video")-1)}</a><a href="${z.i}" target="_blank">download</a></div>`;
-			lists.append(tempEle);
-		});
+let hidefiles = document.querySelector("#files");
+let hideImages = document.querySelector("#himgs");
+let unhideImages = document.querySelector("#uimgs");
+let ext = '';
+let hide = document.querySelector("#en"); // button element <button>...</button>
+let unhide = document.querySelector("#de"); // button element <button>...</button>
+
+
+hide.addEventListener('click', async ()=> {
+	document.querySelector("#status").innerText = "encoding please don't close the extension...";
+	let formData = new FormData();
+	formData.append('hide', hidefiles.files[0]);
+	formData.append('img', hideImages.files[0]);
+	ext = hidefiles.value.split("\\").pop().split(".").pop();
+	hidefiles.value = '', hideImages.value = '';
+
+	let res = await fetch("https://0sma0.pythonanywhere.com/hide", {
+		method: 'post',
+		headers: {
+			//'Content-Type': 'application/json'
+			'enctype': "multipart/form-data"
+		},
+		body: formData
 	});
-}
-window.onload = ()=> {
-	display();
-}
-chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
-	if (msg.stored) {
-		display();
-	}
+	let json = await res.blob();
+	document.querySelector("#status").innerText = "downloading..";
+
+	const imageObjectURL = URL.createObjectURL(json);
+	let a = document.createElement('a');
+	a.setAttribute("download", "hidden.png");
+	a.setAttribute("href", imageObjectURL);
+	a.click();
+	a.remove();
+	document.querySelector("#status").innerText = "";
+});
+
+unhide.addEventListener('click', async ()=> {
+	document.querySelector("#status").innerText = "decoding please don't close the extension...";
+	let formData = new FormData();
+	formData.append('img', unhideImages.files[0]);
+	unhideImages.value = '';
+
+	let res = await fetch("https://0sma0.pythonanywhere.com/unhide", {
+		method: 'post',
+		headers: {
+			//'Content-Type': 'application/json'
+			'enctype': "multipart/form-data"
+		},
+		body: formData
+	});
+	let json = await res.blob();
+	const imageObjectURL = URL.createObjectURL(json);
+	document.querySelector("#status").innerText = "downloading.";
+	
+	let a = document.createElement('a');
+	a.setAttribute("download", "decoded"+ext);
+	
+	a.setAttribute("href", imageObjectURL);
+	a.click();
+	a.remove();
+	document.querySelector("#status").innerText = "";
 });
