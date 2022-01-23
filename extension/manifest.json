@@ -1,0 +1,32 @@
+{
+  "name": "SMA",
+  "description": "Send hidden text",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "./views/index.html",
+    "default_title": "SMA",
+    "default_icon": {
+      "16": "./assets/sma.png",
+      "32": "./assets/sma.png",
+      "64": "./assets/sma.png",
+      "128": "./assets/sma.png"
+    }
+  },
+  "icons": {
+    "16": "./assets/sma.png",
+    "32": "./assets/sma.png",
+    "64": "./assets/sma.png",
+    "128": "./assets/sma.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["content.js"]
+  }],
+  "permissions": ["storage", "scripting", "tabs"]
+}

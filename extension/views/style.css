@@ -1,0 +1,21 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50px;
+
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+body{
+	width: 300px;
+	height: 200px;
+	background-repeat: no-repeat;
+}
