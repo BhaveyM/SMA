@@ -6,10 +6,10 @@ steganography-messaging app extention
 ## About
 
 Our project idea is to provide the most secure way of sending and receiving messages. We
-plan to achieve it through the concept of steganography. This is a web extension where 
-users can share data with each other through images, these images will contain encoded 
-messages/any type of file. This method is highly secure and efficient than cryptography.
-What makes this project unique is that it does not use the conventional method of storing
+have achieved it through the concept of steganography. This web extension allows users to 
+share data with each other through images, these images will contain encoded messages or
+any type of file. This method is highly secure and efficient than cryptography.
+What makes this project unique is, it does not use the conventional method of storing
 data in least significant pixels but utilizes binary to store the data in particular order of 
 pixels according to the applied algorithm. Additional benefits - No message is stored in any 
 sort of database and multiple alogorithms can be used to secure it in multi-layer deep encrypion.
