@@ -6,10 +6,13 @@ steganography-messaging app extention
 ## About
 
 Our project idea is to provide the most secure way of sending and receiving messages. We
-plan to achieve it through the concept of steganography. To demonstrate it, we are building
-a messaging portal where users can interact with each other via images, these images contain
-hidden encoded messages/any type of file. This method is more secure and efficient than
-cryptography.
+plan to achieve it through the concept of steganography. This is a web extension where 
+users can share data with each other through images, these images will contain encoded 
+messages/any type of file. This method is highly secure and efficient than cryptography.
+What makes this project unique is that it does not use the conventional method of storing
+data in least significant pixels but utilizes binary to store the data in particular order of 
+pixels according to the applied algorithm. Additional benefits - No message is stored in any 
+sort of database and multiple alogorithms can be used to secure it in multi-layer deep encrypion.
 
 
 ## Set Up
@@ -24,7 +27,7 @@ cryptography.
 
 - Open chrome or any other preferred browser
 
-- Go to more tools and then click extension
+- Go to more tools in the options and then click extension
 
 - Switch to developers mode
 
